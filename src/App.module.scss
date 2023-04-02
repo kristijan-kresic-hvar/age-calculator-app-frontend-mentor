@@ -1,0 +1,59 @@
+.app {
+  width: 95%;
+  max-width: 840px;
+  padding: 56px;
+  background: #FFFFFF;
+  border-radius: 24px 24px 200px 24px;
+  transition: padding 200ms ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media(max-width: 768px) {
+    padding: 48px 24px;
+  }
+
+  .formWrapper {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+
+    @media (max-width: 375px) {
+      gap: 16px;
+    }
+  }
+
+  .submitHandler {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+
+    > div {
+      flex: 1;
+      height: 1px;
+      width: 100%;
+      background: #DCDCDC;
+    }
+
+    button {
+      flex: 1;
+      width: 96px;
+      max-width: 96px;
+      height: 96px;
+      max-height: 96px;
+      border: none;
+      border-radius: 50%;
+      background: #854DFF;
+      cursor: pointer;
+      transition: background 200ms ease-in-out;
+
+      &:hover {
+        background: #151515;
+      }
+    }
+  }
+}
+

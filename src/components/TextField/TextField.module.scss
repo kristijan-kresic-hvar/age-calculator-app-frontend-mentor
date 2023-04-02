@@ -1,0 +1,66 @@
+.label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #716F6F;
+
+  @media(max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.labelError {
+  color: #FF5959;
+}
+
+.input {
+  border: 1px solid #DCDCDC;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 160px;
+  min-width: 88px;
+  height: 72px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  color: #151515;
+  padding: 12px 24px 12px 24px;
+  caret-color: #854DFF;
+  margin: 8px 0;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #854DFF;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media(max-width: 520px) {
+
+    height: 54px;
+  }
+}
+
+.inputError {
+  border: 1px solid #FF5959;
+}
+
+.error {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FF5959;
+}
