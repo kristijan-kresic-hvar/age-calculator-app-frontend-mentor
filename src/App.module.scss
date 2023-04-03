@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .app {
   width: 95%;
   max-width: 840px;
@@ -45,7 +47,7 @@
       flex: 1;
       height: 1px;
       width: 100%;
-      background: #DCDCDC;
+      background: $line;
     }
 
     .icon {
@@ -73,12 +75,12 @@
       max-height: 96px;
       border: none;
       border-radius: 50%;
-      background: #854DFF;
+      background: $purple;
       cursor: pointer;
       transition: background 200ms ease-in-out;
 
       &:hover {
-        background: #151515;
+        background: $hoverBlack;
       }
 
       @media (max-width: 768px) {

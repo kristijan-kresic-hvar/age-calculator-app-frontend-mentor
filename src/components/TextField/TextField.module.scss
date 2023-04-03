@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .label {
   display: block;
   font-family: 'Poppins', sans-serif;
@@ -7,7 +9,7 @@
   line-height: 21px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #716F6F;
+  color: $labelColor;
 
   @media(max-width: 768px) {
     font-size: 12px;
@@ -15,11 +17,11 @@
 }
 
 .labelError {
-  color: #FF5959;
+  color: $error;
 }
 
 .input {
-  border: 1px solid #DCDCDC;
+  border: 1px solid $line;
   border-radius: 8px;
   width: 100%;
   max-width: 160px;
@@ -31,14 +33,14 @@
   font-size: 32px;
   line-height: 48px;
   letter-spacing: 0.01em;
-  color: #151515;
+  color: $hoverBlack;
   padding: 12px 24px;
-  caret-color: #854DFF;
+  caret-color: $purple;
   margin: 8px 0;
 
   &:focus {
     outline: none;
-    border: 1px solid #854DFF;
+    border: 1px solid $purple;
   }
 
   @media (max-width: 768px) {
@@ -53,7 +55,7 @@
 }
 
 .inputError {
-  border: 1px solid #FF5959;
+  border: 1px solid $error;
 }
 
 .error {
@@ -63,5 +65,5 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #FF5959;
+  color: $error;
 }
